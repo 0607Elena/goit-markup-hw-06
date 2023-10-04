@@ -86,7 +86,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0 0;
+  padding: 24px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -196,8 +196,6 @@ ul {
 .header-icon {
   margin-left: auto;
   border: none;
-  margin-top: 16px;
-  margin-bottom: 16px;
   background-color: #fff;
 }
 
@@ -211,7 +209,7 @@ ul {
 }
 @media (min-width: 768px) {
   .header {
-    padding: ;
+    padding: 16px 0;
   }
 
   .header-icon {
@@ -223,6 +221,8 @@ ul {
     flex-direction: column;
     gap: 12px;
   }
+  .contacts a {
+    font-size: 12px;}
 }
 
 @media (min-width: 1158px) {
@@ -231,8 +231,12 @@ ul {
   }
   .header-contacts-list {
     flex-direction: row;
+    gap: 40px;
   }
+  .contacts a {
+    font-size: 16px;}
 }
+
 
 /* section1 hero */
 
@@ -254,7 +258,7 @@ ul {
   padding-bottom: 96px;
 }
 
-@media only screen (min-resolution: 192dpi) {
+@media only screen and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         to bottom,
@@ -264,6 +268,8 @@ ul {
       url(../hero/dark-bg_mob@2x.jpg);
   }
 }
+
+
 
 @media only screen and (min-width: 768px) {
   .hero {
@@ -408,7 +414,7 @@ ul {
 
 .our-advantages-title {
   color: var(--dark-NAVY-BLUE);
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -453,6 +459,8 @@ ul {
   }
   .our-advantages-title {
     text-align: start;
+    font-size: 20px;
+    font-weight: 500;
   }
   .our-advantages-text {
   }
@@ -845,8 +853,9 @@ ul {
   .footer-conteiner {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 72px 24px;
+    padding-left: 108px;
     text-align: start;
   }
   .social-media {
@@ -870,14 +879,20 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    padding-left: 16px;
   }
   .footer-icons {
     margin-right: 80px;
+    gap: 16px;
+    
   }
   .subscribe-form {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
+  }
+  .logo-paragraf {
+    margin-right: 60px;
   }
 }
 
@@ -1201,14 +1216,14 @@ ul {
 }
 
 .mobile-contacts-link {
-  color: var(--IRIS, #4d5ae5);
+  color: var(--SLATE, #434455);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.mobile-contacts-link .accent {
+.mobile-contacts-link.accent {
   color: var(--IRIS, #4d5ae5);
 }
 
@@ -1216,8 +1231,9 @@ ul {
   margin-bottom: 24px;
 }
 
-.mobile-link {
+.our-mobile-icon-list{
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: center;
 }
